@@ -27,9 +27,12 @@ to data passed into it from the `GerritProcess`. If you pass in a
 subscribing `Stream`, note you'll be getting the raw `Buffer` back from the
 process.
 
+You'll need to pass `gerritProcess.stdout` to the `GerritStream` constructor.
+If you use `stderror` or `stdin` for some reason, just pass that in instead.
+
 #### constructor( gerritProcess )
 
-`var gerritStream = new GerritStream( gerritProcess )`
+`var gerritStream = new GerritStream( gerritProcess.stdout )`
 
 #### addSubscriber( stream )
 
