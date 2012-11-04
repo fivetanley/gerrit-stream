@@ -1,5 +1,5 @@
 {
-  "name": "node-gerrit",
+  "name": "gerrit-stream",
   "version": "0.0.1",
   "description": "basic stream wrapper for gerrit",
   "main": "index.js",
