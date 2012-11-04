@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": "git@github.com:fivetanley/node-gerrit.git",
+  "repository": "git@github.com:fivetanley/gerrit-stream.git",
   "keywords": [
     "gerrit"
   ],
