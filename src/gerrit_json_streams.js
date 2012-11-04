@@ -1,14 +1,12 @@
 var JSONStream = require( 'JSONStream' )
   , Streams
 
-function streamForType( type, jsonStream ) {
-  jsonStream = jsonStream || JSONStream
-  return jsonStream.parse( [ "type", type ] )
-}
-
 module.exports = Streams = {
 
-  streamForType: streamForType
+  streamForType: function ( type, jsonStream ) {
+    jsonStream = jsonStream || JSONStream
+    return jsonStream.parse( [ "type", type ] )
+  }
 
 , patchsetCreated: function() {
     return Streams.streamForType( 'patchset-created' )

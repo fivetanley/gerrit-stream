@@ -4,10 +4,10 @@ function gerritProcess( host, port, subCommand, childProcessLib ) {
   childProcessLib = childProcessLib || childProcess
   return childProcessLib.spawn( 'ssh',
     [
-      '-p ' + port
+      '-p ' + ( port || 29418 )
     , host
     , 'gerrit'
-    , subCommand
+    , subCommand || 'stream-events'
     ]
   )
 }
