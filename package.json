@@ -1,17 +1,17 @@
 {
   "name": "node-gerrit",
-  "version": "0.0.0",
-  "description": "ERROR: No README.md file found!",
+  "version": "0.0.1",
+  "description": "basic stream wrapper for gerrit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": "",
   "keywords": [
     "gerrit"
   ],
   "author": "Stanley Stuart",
-  "license": "BSD",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
     "sinon-chai": "~2.1.2",
