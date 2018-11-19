@@ -32,4 +32,12 @@ module.exports = Streams = {
     return Streams.streamForType( 'ref-updated' )
   }
 
+, wipStateChanged: function() {
+    return Streams.streamForType( 'wip-state-changed' )
+  }
+
+, privateStateChanged: function() {
+    return Streams.streamForType( 'private-state-changed' )
+  }
+
 }

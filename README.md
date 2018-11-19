@@ -52,7 +52,7 @@ This library includes a few helper functions that generate `JSONStream`s.
 `var stream = require( 'gerrit-process' ).JSONStreams.eventName`
 
 Any of the JSONStreams sort based on the `type` key in the root of the JSON
-document. `{ "type": "changeset-restored" }` maps to 
+document. `{ "type": "changeset-restored" }` maps to
 `JSONStreams.changesetRestored`
 
 List of `JSONStreams` available on `JSONStreams`:
@@ -65,3 +65,5 @@ List of `JSONStreams` available on `JSONStreams`:
 * `changeMerged`
 * `commentAdded`
 * `refUpdated`
+* `wipStateChanged`
+* `privateStateChanged`
